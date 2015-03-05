@@ -5,6 +5,7 @@
 set ignorecase
 set smartcase
 set smarttab
+set relativenumber "" Replace numbers.vim with a vim native config
 
 ""
 "" Vim Completion; who needs Supertab?
@@ -19,9 +20,6 @@ set completeopt=menu,preview
 "" Remappings
 ""
 inoremap jj <ESC>
-
-" Remap for numbers.vim
-nnoremap <Leader>no :NumbersToggle<CR>
 
 " Clear search highlights
 map <Leader>hl :nohl<CR>
@@ -84,8 +82,3 @@ let g:ctrlp_show_hidden = 1
 "" NERDTree config
 ""
 let g:NERDTreeShowLineNumbers = 1
-
-""
-"" Numbers config
-""
-let g:numbers_exclude = ['minibufexpl', 'unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m']
