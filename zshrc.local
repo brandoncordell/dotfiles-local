@@ -13,6 +13,10 @@ compdef _c c
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
+# case insensitive tab completion
+zstyle ':completion:*' completer _expand _complete _ignored
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+
 # Exports
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/activator"
 export EDITOR='nvim'
