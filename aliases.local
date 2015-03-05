@@ -1,0 +1,4 @@
+# alias hub functions as git functions
+function git() { hub "$@" }
+
+alias vim=nvim
