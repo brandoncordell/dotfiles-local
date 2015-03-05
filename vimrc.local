@@ -67,6 +67,9 @@ color solarized
 set background=dark
 highlight SpellBad cterm=standout,undercurl ctermfg=160 ctermbg=254
 
+"" Highlight the current line number so it's easier to scan for
+highlight CursorLineNr ctermfg=6 term=none
+
 ""
 "" Airline config
 ""
