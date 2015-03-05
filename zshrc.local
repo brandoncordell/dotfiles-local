@@ -1,8 +1,3 @@
-
-# case insensitive tab completion
-zstyle ':completion:*' completer _expand _complete _ignored
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-
 # Exports
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/activator"
 export EDITOR='nvim'
@@ -15,5 +10,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 source $HOME/.zsh/config/bindings.zsh
 source $HOME/.zsh/config/cdpath.zsh
+source $HOME/.zsh/config/completions.zsh
 source $HOME/.zsh/functions/c.zsh
 source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
