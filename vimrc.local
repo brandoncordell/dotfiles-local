@@ -1,0 +1,91 @@
+" Maintainer: Brandon Cordell <brandon@brandoncordell.com>
+" URL: http://github.com/brandoncordell/dotfiles/.vimrc
+" License: WTFPL <http://sam.zoy.org/wtfpl/COPYING>
+"
+set ignorecase
+set smartcase
+set smarttab
+
+""
+"" Vim Completion; who needs Supertab?
+""
+set wildmode=full
+set wildmenu
+set omnifunc=syntaxcomplete#Complete
+set complete=.,b,u,]
+set completeopt=menu,preview
+
+""
+"" Remappings
+""
+inoremap jj <ESC>
+
+" Remap for numbers.vim
+nnoremap <Leader>no :NumbersToggle<CR>
+
+" Clear search highlights
+map <Leader>hl :nohl<CR>
+
+" Save a js file and run jslint
+nmap <Leader>m :w<CR>:make<CR>:cw<CR>
+
+" No more fucking shift!
+nnoremap ; :
+
+" Edit .vimrc in a split pane
+nnoremap <Leader>ev :sp ~/.vimrc<CR>
+
+" Strip all trailing whitespace
+nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
+
+" Reselect pasted text
+nnoremap <Leader>v V`]
+
+" Toggle TagBar
+nnoremap <Leader>l :TagbarToggle<CR>
+
+" Toggle NERDTree
+nmap <Leader>n :NERDTreeToggle<CR>
+
+" Format entire file
+nmap <Leader>fef ggVG=
+
+" Open CtrlP Buffer
+nmap <Leader>b :CtrlPBuffer<CR>
+
+" Navigate tabs
+nmap <Leader>tn :tabn<CR>
+nmap <Leader>tp :tabp<CR>
+
+" Dispatch Quick Key
+nnoremap <PageDown> :Dispatch<CR>
+autocmd FileType ruby let b:dispatch = 'spring rspec %'
+
+""
+"" Look and feel
+""
+let g:solarized_termtrans=1
+color solarized
+set background=dark
+highlight SpellBad cterm=standout,undercurl ctermfg=160 ctermbg=254
+
+""
+"" Airline config
+""
+let g:airline_powerline_fonts = 1
+
+""
+"" CtrlP config
+""
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|DS_STORE)$'
+let g:ctrlp_show_hidden = 1
+
+""
+"" NERDTree config
+""
+let g:NERDTreeShowLineNumbers = 1
+
+""
+"" Numbers config
+""
+let g:numbers_exclude = ['minibufexpl', 'unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m']

@@ -1,0 +1,15 @@
+[user]
+  name = Brandon Cordell
+  email = brandon@brandoncordell.com
+[color]
+  ui = true
+[github]
+  user = brandoncordell
+  token = 52a7d594f464ce30d19260bfafc1e982
+[core]
+  editor = vim
+[alias]
+  b = branch
+  dc = diff --cached
+  discard = checkout --
+  unstage = reset HEAD --

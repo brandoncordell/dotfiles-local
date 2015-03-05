@@ -1,0 +1,26 @@
+# Quickjumping and completion for ~/Code
+function c() {
+  cd ~/Code/$1;
+}
+
+_c() {
+  _files -W ~/Code;
+}
+
+compdef _c c
+
+# oh-my-zsh style history
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
+
+# Exports
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/activator"
+export EDITOR='vim'
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
