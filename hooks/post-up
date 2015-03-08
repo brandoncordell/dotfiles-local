@@ -1,3 +1,0 @@
-#!/bin/sh
-
-vim -u $HOME/.vimrc.bundles +PluginInstall +PluginClean! +qa
