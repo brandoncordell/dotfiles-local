@@ -42,9 +42,6 @@ nnoremap <Leader>v V`]
 " Toggle TagBar
 nnoremap <Leader>l :TagbarToggle<CR>
 
-" Toggle NERDTree
-nmap <Leader>n :NERDTreeToggle<CR>
-
 " Format entire file
 nmap <Leader>fef ggVG=
 
@@ -80,8 +77,3 @@ let g:airline_powerline_fonts = 1
 ""
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|DS_STORE)$'
 let g:ctrlp_show_hidden = 1
-
-""
-"" NERDTree config
-""
-let g:NERDTreeShowLineNumbers = 1
