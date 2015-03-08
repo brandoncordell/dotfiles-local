@@ -5,7 +5,7 @@
 set ignorecase
 set smartcase
 set smarttab
-set relativenumber "" Replace numbers.vim with a vim native config
+set relativenumber " Replace numbers.vim with a vim native config
 
 ""
 "" Vim Completion; who needs Supertab?
@@ -23,9 +23,6 @@ inoremap jj <ESC>
 
 " Clear search highlights
 map <Leader>hl :nohl<CR>
-
-" Save a js file and run jslint
-nmap <Leader>m :w<CR>:make<CR>:cw<CR>
 
 " No more fucking shift!
 nnoremap ; :
