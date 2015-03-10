@@ -6,6 +6,7 @@ set ignorecase
 set smartcase
 set smarttab
 set relativenumber " Replace numbers.vim with a vim native config
+set nowrap
 
 ""
 "" Vim Completion; who needs Supertab?
