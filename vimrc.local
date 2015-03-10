@@ -37,9 +37,6 @@ nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 " Reselect pasted text
 nnoremap <Leader>v V`]
 
-" Toggle TagBar
-nnoremap <Leader>l :TagbarToggle<CR>
-
 " Format entire file
 nmap <Leader>fef ggVG=
 
