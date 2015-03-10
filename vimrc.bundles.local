@@ -1,5 +1,4 @@
 " Plugins
-Plugin 'rizzatti/dash.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
