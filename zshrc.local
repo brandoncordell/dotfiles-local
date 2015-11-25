@@ -1,5 +1,5 @@
 # Exports
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin/activator"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin/activator"
 export PATH="/usr/local/lib:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/local/lib/cakephp/cake/console:$PATH"
@@ -7,7 +7,7 @@ export PATH="$HOME/.bin:$PATH"
 
 export EDITOR='vim'
 
-eval "$(rbenv init -)"
+eval "$(rbenv init - --no-rehash zsh)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -16,4 +16,5 @@ source $HOME/.zsh/config/bindings.zsh
 source $HOME/.zsh/config/cdpath.zsh
 source $HOME/.zsh/config/completions.zsh
 source $HOME/.zsh/functions/c.zsh
-source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.zsh/plugins/antigen.zsh
+source $HOME/.zsh/config/Antigenfile
