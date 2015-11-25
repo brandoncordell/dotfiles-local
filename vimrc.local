@@ -59,9 +59,12 @@ nnoremap <PageDown> :Dispatch<CR>
 autocmd FileType ruby let b:dispatch = 'spring rspec %'
 
 " UltiSnips
-nnoremap <leader>ue :UltiSnipsEdit<cr>
+nnoremap <leader>ue :UltiSnipsEdit<CR>
 
-" Vim-tmux-runner
+" vim-rspec
+nnoremap <leader>a :call RunAllSpecs()<CR>
+
+" vim-tmux-runner
 nnoremap <Leader>vo :VtrOpenRunner<CR>
 nnoremap <Leader>vk :VtrKillRunner<CR>
 nnoremap <Leader>vf :VtrFocusRunner<CR>
