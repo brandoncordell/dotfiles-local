@@ -18,6 +18,13 @@ set complete=.,b,u,]
 set completeopt=menu,preview
 
 ""
+"" Layout balancing
+""
+autocmd VimResized * :wincmd =
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
+""
 "" Remappings
 ""
 inoremap jj <ESC>
