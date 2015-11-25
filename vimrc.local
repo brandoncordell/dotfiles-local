@@ -58,6 +58,15 @@ nmap <Leader>tp :tabp<CR>
 nnoremap <PageDown> :Dispatch<CR>
 autocmd FileType ruby let b:dispatch = 'spring rspec %'
 
+" UltiSnips
+nnoremap <leader>ue :UltiSnipsEdit<cr>
+
+" Vim-tmux-runner
+nnoremap <Leader>vo :VtrOpenRunner<CR>
+nnoremap <Leader>vk :VtrKillRunner<CR>
+nnoremap <Leader>vf :VtrFocusRunner<CR>
+nnoremap <Leader>vc :VtrCommandToRunner<CR>
+
 ""
 "" Look and feel
 ""
@@ -108,4 +117,7 @@ let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
-nnoremap <leader>ue :UltiSnipsEdit<cr>
+""
+"" vim-rspec
+""
+let g:rspec_command = "call VtrSendCommand('spring rspec {spec}')"
