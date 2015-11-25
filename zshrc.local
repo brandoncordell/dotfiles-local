@@ -16,5 +16,3 @@ source $HOME/.zsh/config/bindings.zsh
 source $HOME/.zsh/config/cdpath.zsh
 source $HOME/.zsh/config/completions.zsh
 source $HOME/.zsh/functions/c.zsh
-source $HOME/.zsh/plugins/antigen.zsh
-source $HOME/.zsh/config/Antigenfile
