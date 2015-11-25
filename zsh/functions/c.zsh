@@ -7,4 +7,4 @@ _c() {
   _files -W ~/Code;
 }
 
-compdef _c c
+#compdef _c c
