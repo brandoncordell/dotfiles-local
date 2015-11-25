@@ -16,3 +16,7 @@ source $HOME/.zsh/config/bindings.zsh
 source $HOME/.zsh/config/cdpath.zsh
 source $HOME/.zsh/config/completions.zsh
 source $HOME/.zsh/functions/c.zsh
+
+# Plugins
+source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
