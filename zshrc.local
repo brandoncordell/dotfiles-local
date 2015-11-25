@@ -16,7 +16,13 @@ source $HOME/.zsh/config/bindings.zsh
 source $HOME/.zsh/config/cdpath.zsh
 source $HOME/.zsh/config/completions.zsh
 source $HOME/.zsh/functions/c.zsh
+source $HOME/.zsh/functions/git.zsh
 
-# Plugins
-source $HOME/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Load Plugins
+for i in `ls -a $HOME/.zsh/plugins`
+do
+ [[ ! "$i" == "." ]] && [[ ! "$i" == ".." ]] && source "$HOME/.zsh/plugins/$i/$i.plugin.zsh"
+done
 
+# Theme
+source "$HOME/.zsh/themes/agnoster.zsh-theme"
