@@ -13,6 +13,7 @@ set nowrap
 ""
 set wildmode=full
 set wildmenu
+set wildignore=.DS_Store
 set omnifunc=syntaxcomplete#Complete
 set complete=.,b,u,]
 set completeopt=menu,preview
@@ -80,6 +81,11 @@ highlight SpellBad cterm=standout,undercurl ctermfg=160 ctermbg=254
 
 "" Highlight the current line number so it's easier to scan for
 highlight CursorLineNr ctermfg=6 term=none
+
+""
+"" netrw config
+""
+let g:netrw_list_hide = '\.DS_STORE'
 
 ""
 "" Airline config
