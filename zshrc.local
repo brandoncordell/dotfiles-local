@@ -15,7 +15,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 source $HOME/.zsh/config/bindings.zsh
 source $HOME/.zsh/config/cdpath.zsh
 source $HOME/.zsh/config/completions.zsh
-source $HOME/.zsh/functions/c.zsh
 source $HOME/.zsh/functions/git.zsh
 
 # Load Plugins
