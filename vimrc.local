@@ -99,6 +99,11 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|DS_STORE)$'
 let g:ctrlp_show_hidden = 1
 
 ""
+"" Emmet config
+""
+let g:user_emmet_leader_key = '<C-a>'
+
+""
 "" YouCompleteMe config
 ""
 let g:ycm_dont_warn_on_startup = 0
