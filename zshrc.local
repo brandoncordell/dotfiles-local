@@ -12,11 +12,6 @@ eval "$(rbenv init - --no-rehash zsh)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Load custom configs
-for config in ~/.zsh/config/*; do
-  source $config
-done
-
 # Load Plugins
 for i in `ls -a $HOME/.zsh/plugins`
 do
