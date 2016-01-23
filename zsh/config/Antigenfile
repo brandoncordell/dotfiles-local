@@ -1,6 +1,0 @@
-antigen bundle git-prompt
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-antigen theme avit
-
-antigen apply
