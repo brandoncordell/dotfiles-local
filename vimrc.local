@@ -132,6 +132,6 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 ""
-"" vim-rspec
+"" vim-test
 ""
-let g:rspec_command = "VtrSendCommandToRunner! spring rspec {spec}"
+let test#strategy = 'vtr'
