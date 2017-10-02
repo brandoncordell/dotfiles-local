@@ -74,6 +74,9 @@ nnoremap <Leader>vc :VtrCommandToRunner<CR>
 " vim-taglist opener
 nnoremap <silent> <F8> :TlistToggle<CR>
 
+" better pasting
+set pastetoggle=<F9>
+
 ""
 "" Look and feel
 ""
