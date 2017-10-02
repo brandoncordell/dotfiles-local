@@ -71,6 +71,9 @@ nnoremap <Leader>vk :VtrKillRunner<CR>
 nnoremap <Leader>vf :VtrFocusRunner<CR>
 nnoremap <Leader>vc :VtrCommandToRunner<CR>
 
+" vim-taglist opener
+nnoremap <silent> <F8> :TlistToggle<CR>
+
 ""
 "" Look and feel
 ""
@@ -137,6 +140,14 @@ let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 ""
-"" vim-test
+"" vim-test config
 ""
 let test#strategy = 'vtr'
+
+""
+"" vim-taglist config
+""
+let Tlist_GainFocus_On_ToggleOpen = 1
+let Tlist_Show_One_File = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 75
