@@ -26,6 +26,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-speeddating'
 Plug 'tpope/vim-vinegar'
 Plug 'vim-scripts/taglist.vim'
+Plug 'wincent/ferret'
 Plug 'yssl/QFEnter'
 
 if has('nvim')
