@@ -133,7 +133,7 @@ let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 ""
 "" UltiSnips config
 ""
-let g:UltiSnipsSnippetsDir = '~/.vim/snippets'
+let g:UltiSnipsSnippetsDir = '~/.vim/bundle/vim-snippets/UltiSnips'
 let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
