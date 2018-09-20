@@ -15,6 +15,7 @@ set colorcolumn=100
 set wildmode=full
 set wildmenu
 set wildignore=.DS_Store
+set wildignore+=*/.git/*,*/tmp/*,*.swp
 set omnifunc=syntaxcomplete#Complete
 set complete=.,b,u,]
 set completeopt=menu,preview
