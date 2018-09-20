@@ -67,9 +67,6 @@ nmap <Leader>tp :tabp<CR>
 " UltiSnips
 nnoremap <leader>ue :UltiSnipsEdit<CR>
 
-" vim-rspec
-nnoremap <leader>a :call RunAllSpecs()<CR>
-
 " vim-tmux-runner
 nnoremap <Leader>vo :VtrOpenRunner<CR>
 nnoremap <Leader>vk :VtrKillRunner<CR>
