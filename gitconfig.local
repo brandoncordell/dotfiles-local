@@ -14,3 +14,4 @@
   discard = checkout --
   unstage = reset HEAD --
   trust = "!mkdir -p .git/safe" # Mark a repo as trusted
+  conflicted = !vim +Conflicted
