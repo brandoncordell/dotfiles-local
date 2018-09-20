@@ -1,7 +1,4 @@
 " Plugs
-Plug 'Raimondi/delimitMate'
-Plug 'SirVer/ultisnips'
-Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'bling/vim-airline'
