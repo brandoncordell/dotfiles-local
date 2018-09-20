@@ -1,3 +1,7 @@
+if (( $+commands[nvim] )) ; then
+  alias vim="nvim"
+fi
+
 # Exports
 export EDITOR='vim'
 
