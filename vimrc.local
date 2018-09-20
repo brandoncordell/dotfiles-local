@@ -26,6 +26,11 @@ autocmd VimResized * :wincmd =
 nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
 nnoremap <leader>= :wincmd =<cr>
 
+if has('nvim')
+  set inccommand=nosplit
+  let g:deoplete#enable_at_startup = 1
+endif
+
 if executable('rg')
   set grepprg=rg\ --color=never
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
