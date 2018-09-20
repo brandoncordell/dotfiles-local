@@ -48,9 +48,6 @@ map <Leader>hl :nohl<CR>
 " No more fucking shift!
 nnoremap ; :
 
-" Edit .vimrc in a split pane
-nnoremap <Leader>ev :sp ~/.vimrc<CR>
-
 " Strip all trailing whitespace
 nnoremap <Leader>W :%s/\s\+$//<CR>:let @/=''<CR>
 
