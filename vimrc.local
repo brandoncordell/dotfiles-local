@@ -64,10 +64,6 @@ nmap <Leader>b :CtrlPBuffer<CR>
 nmap <Leader>tn :tabn<CR>
 nmap <Leader>tp :tabp<CR>
 
-" Dispatch Quick Key
-nnoremap <PageDown> :Dispatch<CR>
-autocmd FileType ruby let b:dispatch = 'spring rspec %'
-
 " UltiSnips
 nnoremap <leader>ue :UltiSnipsEdit<CR>
 
