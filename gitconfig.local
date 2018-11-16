@@ -15,3 +15,4 @@
   unstage = reset HEAD --
   trust = "!mkdir -p .git/safe" # Mark a repo as trusted
   conflicted = !vim +Conflicted
+  pr = "!hub pull-request"

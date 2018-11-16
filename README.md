@@ -1,3 +1,3 @@
 # dotfiles.local
 
-This is my local dotfile configuration
+This is my local dotfiles configuration
