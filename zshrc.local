@@ -23,4 +23,7 @@ test -e "${HOME}/.bin/tmuxinator.zsh" && source "${HOME}/.bin/tmuxinator.zsh"
 # iterm2 shell integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# enable ASDF (this should be loaded in dotfiles, but it's not working)
+test -e "${HOME}/.asdf/asdf.sh" && source "${HOME}/.asdf/asdf.sh"
+
 export -U PATH
