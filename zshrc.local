@@ -6,8 +6,6 @@ fi
 PATH="/usr/local/lib:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 PATH="./node_modules/.bin:$HOME/.yarn/bin:$PATH"
 
-export PATH=".git/safe/../../bin:`echo "$PATH"|sed -e 's,\.git/[^:]*bin:,,g'`"
-
 # Load Plugins
 for i in `ls -a $HOME/.zsh/plugins`
 do
@@ -25,5 +23,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # enable ASDF (this should be loaded in dotfiles, but it's not working)
 test -e "${HOME}/.asdf/asdf.sh" && source "${HOME}/.asdf/asdf.sh"
+test -e "${HOME}/.asdf/completions/asdf.bash" && source "${HOME}/.asdf/completions/asdf.bash"
 
 export -U PATH
