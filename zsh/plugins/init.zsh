@@ -5,6 +5,7 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/gitfast", from:oh-my-zsh
 zplug "plugins/git-prompt", from:oh-my-zsh
 zplug "zdharma/fast-syntax-highlighting"
+zplug "zlsun/solarized-man"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
