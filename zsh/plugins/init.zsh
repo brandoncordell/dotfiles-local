@@ -1,5 +1,6 @@
 source $HOME/.zplug/init.zsh
 
+zplug "kiurchv/asdf.plugin.zsh", defer:2
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/gitfast", from:oh-my-zsh
 zplug "plugins/git-prompt", from:oh-my-zsh
