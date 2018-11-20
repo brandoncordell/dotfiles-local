@@ -3,7 +3,7 @@ source $HOME/.zplug/init.zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/gitfast", from:oh-my-zsh
 zplug "plugins/git-prompt", from:oh-my-zsh
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zdharma/fast-syntax-highlighting"
 
 # Install plugins if there are plugins that have not been installed
 if ! zplug check --verbose; then
@@ -13,4 +13,4 @@ if ! zplug check --verbose; then
     fi
 fi
 
-zplug load --verbose
+zplug load
