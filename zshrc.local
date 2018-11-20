@@ -6,11 +6,8 @@ fi
 PATH="/usr/local/lib:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 PATH="./node_modules/.bin:$HOME/.yarn/bin:$PATH"
 
-# Load Plugins
-for i in `ls -a $HOME/.zsh/plugins`
-do
- [[ ! "$i" == "." ]] && [[ ! "$i" == ".." ]] && source "$HOME/.zsh/plugins/$i/$i.plugin.zsh"
-done
+# Plugins
+source "$HOME/.zsh/plugins/init.zsh"
 
 # Theme
 source "$HOME/.zsh/themes/agnoster.zsh-theme"
