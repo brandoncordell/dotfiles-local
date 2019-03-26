@@ -14,6 +14,5 @@
   discard = checkout --
   delete-merged = g b --merged develop | grep -v develop | grep -v HEAD | xargs -n 1 git b -d
   unstage = reset HEAD --
-  trust = "!mkdir -p .git/safe" # Mark a repo as trusted
   conflicted = !vim +Conflicted
   pr = "!hub pull-request"
