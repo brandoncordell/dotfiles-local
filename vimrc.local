@@ -83,9 +83,8 @@ set pastetoggle=<F9>
 ""
 "" Look and feel
 ""
-set termguicolors
-set background=dark
-colorscheme tender
+set background=light
+colorscheme solarized
 
 highlight SpellBad cterm=standout,undercurl ctermfg=160 ctermbg=254
 
