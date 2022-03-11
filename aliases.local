@@ -1,4 +1,1 @@
-# alias hub functions as git functions
-function git() { hub "$@" }
-
 alias m="migrate"
